@@ -1,0 +1,99 @@
+.faq-container {
+  width: 100%;
+  max-width: 450px; /* Increased the width for a bigger container */
+  height: 85vh; /* Slightly increased height */
+  border-radius: 50px 0 0 0;
+  background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+  padding: 25px; /* Increased padding for better spacing */
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.faq-title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 20px; /* More space under title */
+}
+
+.faq-item {
+  display: flex;
+  background: #EAEFEBCC;
+  border: 1px solid #D2E7FF80; /* Slightly thicker border */
+  border-radius: 30px; /* Increased border-radius for a smoother look */
+  padding: 16px; /* Increased padding */
+  margin-bottom: 18px; /* More space between FAQ items */
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px; /* More space between image and content */
+  opacity: 1;
+}
+
+.faq-image {
+  width: auto;
+  max-width: 100px; /* Increased image size */
+  height: auto;
+  border-radius: 10px;
+}
+
+.faq-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faq-question {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Increased font size for better readability */
+  font-weight: 700;
+  color: #EE0A22;
+  margin-bottom: 8px; /* Increased space between question and answer */
+}
+
+.faq-answer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px; /* Increased font size for better readability */
+  font-weight: 400;
+  text-align: left;
+}
+
+.delete-icon {
+  cursor: pointer;
+  pointer-events: auto;
+  font-size: 18px; /* Increased icon size */
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .faq-container {
+    padding: 15px;
+    height: 90vh;
+  }
+
+  .faq-title {
+    font-size: 22px;
+  }
+
+  .faq-item {
+    width: 100%;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-image {
+    max-width: 80px; /* Increased image size for small screens */
+    margin-bottom: 12px;
+  }
+
+  .faq-question {
+    font-size: 14px; /* Slightly larger text for small screens */
+  }
+
+  .faq-answer {
+    font-size: 13px; /* Slightly larger answer text for readability */
+  }
+}
